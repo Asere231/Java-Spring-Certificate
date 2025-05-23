@@ -6,5 +6,5 @@ Each folder represents a separate project, demonstrating key concepts and skills
 ## 📁 Directory Overview
 
 - **QUIZ_CONSOLE_APP**  
-  A basic console-based quiz application written in Java. This project showcases the use of classes, constructors, arrays, user input handling with `Scanner`, and simple logic for evaluating user responses.  
-  The program prompts the user with multiple-choice questions, collects their answers, and calculates a final score based on correct responses. It's a great demonstration of control flow, object-oriented design, and Java fundamentals.
+  A very simple console-based quiz application — the first project in this course. It showcases the basics of Java programming, including object-oriented design, class creation, arrays, and user input using `Scanner`.  
+  The program asks the user a series of multiple-choice questions, records their answers, and prints a score at the end. It's designed to reinforce fundamental Java concepts in a practical and interactive way.
