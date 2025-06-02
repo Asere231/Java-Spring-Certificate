@@ -39,4 +39,17 @@ Each folder represents a separate project, demonstrating key concepts and skills
   Environment-sensitive configuration (e.g. DB credentials) can be separated from Git-tracked files using a `local` profile or environment variables to ensure secure development practices.  
   This project serves as a hands-on introduction to working with relational databases in Spring Boot without using JPA or Hibernate.
 
+- **JobApp**  
+  A full-stack **Spring MVC web application** for managing job postings. It features dynamic JSP pages (`addjob.jsp`, `viewalljobs.jsp`, `success.jsp`, `home.jsp`) styled with custom CSS and Bootstrap, and uses Spring's MVC architecture to handle form input, business logic, and view rendering.  
+  The application includes:
+  
+  - A `JobPost` model that holds job profile data including title, description, required experience, and tech stack
+  - A `JobController` to handle web requests and bind user-submitted form data
+  - A `JobService` for business logic
+  - A `JobRepo` (in-memory) to simulate persistent storage
+
+  Form submissions are processed via POST, and the resulting job posts are displayed using JSTL with `c:forEach` tags. View logic is separated cleanly, and CSS files (`style.css`, `style1.css`) apply consistent styling across the site.  
+  The project demonstrates classic Spring MVC flow with JSP views, making it a solid bridge before transitioning to more modern frontend integrations or REST-based APIs.
+
+
 
