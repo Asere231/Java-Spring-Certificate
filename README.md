@@ -32,3 +32,11 @@ Each folder represents a separate project, demonstrating key concepts and skills
   The project eliminates the need for manual configuration files (`@Configuration`, `@Bean`) and instead leverages component scanning and Spring Boot’s convention-over-configuration approach.  
   It serves as a foundation for building modern Spring Boot applications with clean code, better structure, and minimal boilerplate.
 
+- **SpringJDBC**  
+  A Spring Boot project focused on using **Spring JDBC** to perform database operations in a clean and layered architecture.  
+  The project demonstrates how to connect to a PostgreSQL database using Spring Boot’s `application.properties`, load schema and data using `schema.sql` and `data.sql`, and define service and repository layers (`StudentService`, `StudentRepo`) to manage student records.  
+  It uses `JdbcTemplate` for querying the database and maps results to Java objects like `Student`.  
+  Environment-sensitive configuration (e.g. DB credentials) can be separated from Git-tracked files using a `local` profile or environment variables to ensure secure development practices.  
+  This project serves as a hands-on introduction to working with relational databases in Spring Boot without using JPA or Hibernate.
+
+
