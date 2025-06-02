@@ -19,3 +19,16 @@ Each folder represents a separate project, demonstrating key concepts and skills
   This project includes examples using annotated entity classes like `Laptop`, `Alien`, and `Student`.  
   It covers configuration via `hibernate.cfg.xml` and `hibernate.properties`, session management, and how to perform CRUD operations using Hibernate's Session API.  
   Emphasis is placed on separating configuration from code for secure credential handling and scalable design.
+
+- **SpringDemo**  
+  A basic Spring project that introduces **Java-based configuration** using `@Configuration`, `@Bean`, and dependency injection through setters.  
+  It demonstrates how to wire custom beans (`Alien`, `Laptop`, `Desktop`) using interfaces like `Computer`, and manage their interactions via Spring's ApplicationContext.  
+  This project avoids component scanning and instead uses manual bean registration to reinforce foundational Spring IoC concepts.  
+  Logs such as "Laptop created" and "Compiling..." help visualize bean instantiation and method execution.
+
+- **SpringBootDemo**  
+  A transition project from **SpringDemo** to **Spring Boot**, this application introduces Spring Boot's auto-configuration and simplified setup using `@SpringBootApplication`.  
+  It demonstrates how to register beans like `Laptop`, `Desktop`, and `CPU` using `@Component` and how to inject dependencies automatically into the `Alien` class using `@Autowired`.  
+  The project eliminates the need for manual configuration files (`@Configuration`, `@Bean`) and instead leverages component scanning and Spring Boot’s convention-over-configuration approach.  
+  It serves as a foundation for building modern Spring Boot applications with clean code, better structure, and minimal boilerplate.
+
