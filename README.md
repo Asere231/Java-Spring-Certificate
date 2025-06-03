@@ -51,5 +51,35 @@ Each folder represents a separate project, demonstrating key concepts and skills
   Form submissions are processed via POST, and the resulting job posts are displayed using JSTL with `c:forEach` tags. View logic is separated cleanly, and CSS files (`style.css`, `style1.css`) apply consistent styling across the site.  
   The project demonstrates classic Spring MVC flow with JSP views, making it a solid bridge before transitioning to more modern frontend integrations or REST-based APIs.
 
+- **SpringBootRest**  
+  A RESTful Spring Boot application that exposes API endpoints for managing job postings using **Spring Data JPA** for persistence.  
+  This project demonstrates a clean controller-service-repository architecture with a focus on real database integration.
+
+  Key components:
+  - `JobPost` is annotated with `@Entity` and mapped to a database table
+  - `JobRepo` extends `JpaRepository`, enabling full CRUD capabilities and custom query support
+  - `JobService` contains the business logic and interacts with the repository layer
+  - `JobRestController` exposes REST endpoints for clients to interact with job data via HTTP
+
+  The project uses standard JPA annotations and Spring Boot auto-configuration to manage entity persistence.  
+  Functionality was tested using **Postman**, which confirmed that all REST endpoints (e.g., `GET`, `POST`, `PUT`, `DELETE`) operate correctly with data being stored in a persistent relational database.
+
+  This project evolved from a version that stored job data in-memory to a more robust, scalable design using Spring Data JPA — a concept learned and applied from the `SpringDataJpa` project.
+
+- **SpringDataJpa**  
+  A Spring Boot project demonstrating the use of **Spring Data JPA** to perform database operations with minimal boilerplate code.  
+  This project uses a `Student` entity and a `StudentRepo` interface that extends `JpaRepository`, enabling powerful CRUD and query operations without writing SQL.  
+  The application connects to a relational database using standard Spring Boot configuration and automatically maps the `Student` object to a table using JPA annotations.
+
+  Key highlights:
+  - Uses `@Entity`, `@Id`, and `@GeneratedValue` in `Student.java` to define a persistent model
+  - Leverages Spring Data JPA's dynamic query method naming (e.g., `findByAgeGreaterThan()`, `findByNameContaining()`)
+  - Includes a clean `SpringDataJpaApplication` class to bootstrap the app and demonstrate repository usage
+  - Can be tested using Postman or the command line runner for interacting with the repository at startup
+
+  This project focuses on how Spring simplifies data access with JPA and is ideal for mastering entity-repository interaction in enterprise-grade applications.
+
+
+
 
 
