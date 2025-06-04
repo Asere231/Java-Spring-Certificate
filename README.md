@@ -79,6 +79,22 @@ Each folder represents a separate project, demonstrating key concepts and skills
 
   This project focuses on how Spring simplifies data access with JPA and is ideal for mastering entity-repository interaction in enterprise-grade applications.
 
+- **SpringEcom**  
+  A full-stack **Spring Boot e-commerce backend** with RESTful APIs for managing products, including image upload and retrieval.  
+
+  Key Features:
+  - Products are stored in a real database using **Spring Data JPA**
+  - `Product` entities include metadata and images (stored as `byte[]`)
+  - The app supports `GET`, `POST`, and `PUT` operations with multipart handling for image uploads
+  - Uses `@CrossOrigin` to enable frontend communication (e.g. from a Vite/React app)
+  - Backend logic is modularized into `ProductController`, `ProductService`, and `ProductRepo`
+  - Includes **custom AOP aspects** like `@LoggingAspect`, `@ValidationAspect`, and `@PerformanceMonitoringAspect` for clean observability and validation
+  - All API functionality is tested via **Postman**
+  
+  This project builds on everything learned so far and demonstrates best practices in modern Spring Boot RESTful development, including multipart handling and image rendering.
+
+
+
 
 
 
